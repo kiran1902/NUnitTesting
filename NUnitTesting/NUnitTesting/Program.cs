@@ -1,6 +1,6 @@
 ﻿using NUnitTesting;
 
-MonthlyPay loan = new MonthlyPay();
-loan.Loan();
+Sqrt root = new Sqrt();
+root.Root();
 
 
