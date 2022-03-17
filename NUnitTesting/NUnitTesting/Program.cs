@@ -1,4 +1,6 @@
 ﻿using NUnitTesting;
 
-Prog run = new Prog();
-run.machine();
+TempConvert temperature = new TempConvert();
+
+temperature.CelsiusToFahrenheit();
+temperature.FahrenheitToCelsius();
