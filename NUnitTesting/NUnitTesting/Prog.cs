@@ -8,31 +8,52 @@ namespace NUnitTesting
 {
     class Prog
     {
-        public void machine()
+        public void Calendar()
         {
-            int[] arrNotes = { 2000, 500, 200, 100, 50, 20, 10, 5, 2, 1 };
+            Console.WriteLine("Enter the Month : ");
+            int M = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter the ammount to change /n {2000, 500, 200, 100, 50, 20, 10, 5, 2, 1}");
-            int amount = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the Day : ");
+            int D = int.Parse(Console.ReadLine());
 
-            //Looping to count notes
-            for (int i = 0; i < arrNotes.Length; i++)
+            Console.WriteLine("Enter The Year : ");
+            int Y = int.Parse(Console.ReadLine());
+        
+
+            int y0 = Y - (14 - M) / 12;
+            int x = y0 + y0 / 4 - y0 / 100 + y0 / 400;
+            int m0 = M + 12 * ((14 - M) / 12);
+            int d0 = (D * x + 31 * m0 / 12) % 7;
+
+            switch (d0)
             {
-                int noOfNotes = 0;
-                if (amount >= arrNotes[i])
-                {
-                    noOfNotes =  amount / arrNotes[i];
-                    //using mod(%) to find change
-                    amount = amount % arrNotes[i];
-
-                    Console.WriteLine(arrNotes[i]+ " Number of notes : " +noOfNotes);
-                }
-                //to stop the loop
-                if (amount == 0)
-                {
+                case 0:
+                    Console.WriteLine("Sunday");
                     break;
-                }
-                Console.ReadLine();
+
+                case 1:
+                    Console.WriteLine("Monday");
+                    break;
+
+                case 2:
+                    Console.WriteLine("Tuesday");
+                    break;
+
+                case 3:
+                    Console.WriteLine("Wednesday");
+                    break;
+
+                case 4:
+                    Console.WriteLine("Thursday");
+                    break;
+
+                case 5:
+                    Console.WriteLine("Friday");
+                    break;
+
+                case 6:
+                    Console.WriteLine("Saturday");
+                    break;
             }
         }
     }

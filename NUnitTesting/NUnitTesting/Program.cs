@@ -1,4 +1,5 @@
 ﻿using NUnitTesting;
 
-Prog run = new Prog();
-run.machine();
+Prog calendar = new Prog();
+calendar.Calendar();
+
