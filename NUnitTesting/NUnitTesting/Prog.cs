@@ -25,7 +25,12 @@ namespace NUnitTesting
                     //using mod(%) to find change
                     amount = amount % arrNotes[i];
 
-                    Console.WriteLine(+arrNotes[i]+ "Number of notes : " +noOfNotes);
+                    Console.WriteLine(arrNotes[i]+ " Number of notes : " +noOfNotes);
+                }
+                //to stop the loop
+                if (amount == 0)
+                {
+                    break;
                 }
                 Console.ReadLine();
             }
