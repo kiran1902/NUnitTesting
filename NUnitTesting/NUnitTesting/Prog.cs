@@ -22,6 +22,7 @@ namespace NUnitTesting
                 if (amount >= arrNotes[i])
                 {
                     noOfNotes =  amount / arrNotes[i];
+                    //using mod(%) to find change
                     amount = amount % arrNotes[i];
 
                     Console.WriteLine(+arrNotes[i]+ "Number of notes : " +noOfNotes);
