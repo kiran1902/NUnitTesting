@@ -1,6 +1,6 @@
 ﻿using NUnitTesting;
 
-Sqrt root = new Sqrt();
-root.Root();
+Binary test = new Binary();
+test.Test();
 
 
