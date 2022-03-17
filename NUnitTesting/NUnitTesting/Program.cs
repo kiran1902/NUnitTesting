@@ -1,6 +1,6 @@
 ﻿using NUnitTesting;
 
-TempConvert temperature = new TempConvert();
+MonthlyPay loan = new MonthlyPay();
+loan.Loan();
 
-temperature.CelsiusToFahrenheit();
-temperature.FahrenheitToCelsius();
+
