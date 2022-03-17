@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Welcome to N-Unit Programs");
+﻿using NUnitTesting;
+
+Prog run = new Prog();
+run.machine();
