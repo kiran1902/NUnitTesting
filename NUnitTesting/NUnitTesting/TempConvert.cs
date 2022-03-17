@@ -8,6 +8,7 @@ namespace NUnitTesting
 {
     class TempConvert
     {
+        //class for converting temperature from celsius to farhenheit
         public void CelsiusToFahrenheit()
         {
             double celsius,fahrenheit ;
@@ -18,6 +19,7 @@ namespace NUnitTesting
             Console.WriteLine("Temperature in Fahrenheit is (°F) : " + fahrenheit);
         }
 
+        //class for converting temperature from farhenheit to celsius
         public void FahrenheitToCelsius()
         {
             double fahrenheit, celsius;
